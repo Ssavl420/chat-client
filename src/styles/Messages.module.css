@@ -1,0 +1,112 @@
+.messages {
+   padding: 25px 10px;
+   width: 100%;
+   display: flex;
+   flex-grow: 1;
+   flex-direction: column;
+   row-gap: 20px;
+   border: 10px solid rgba(51, 51, 51, 0.40);
+   box-shadow: inset 0px 0px 20px rgba(51, 51, 51, 0.40);
+   overflow: auto;
+}
+
+.message {
+   width: max-content;
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+   width: 100%;
+}
+
+.text {
+   /* padding: 10px 15px; */
+   max-width: 100%;
+   font-size: 16px;
+   word-wrap: break-word;
+   text-wrap: balance;
+   color: #fff;
+   border-radius: 12px;
+}
+
+.user {
+   font-size: 16px;
+   font-weight: 700;
+   color: white;
+}
+
+.time {
+   margin-top: 18px;
+   font-size: 14px;
+   color: rgba(255, 255, 255, 0.5);
+}
+
+.content {
+   display: flex;
+   gap: 15px;
+}
+
+.userMsg {
+   padding: 10px;
+   width: fit-content;
+   align-items: flex-start;
+   background: #514c4c;
+   border-radius: 10px;
+}
+
+.user .text {
+   background: #514c4c;
+}
+
+.user .user {
+   padding-left: 0px;
+}
+
+.meMsg {
+   margin: 0 0 0 auto;
+   padding: 10px;
+   width: fit-content;
+   background: #292e3a;
+   align-items: flex-end;
+   border-radius: 10px;
+}
+
+/* .meMsg .text {
+   background: #0d49d7;
+} */
+
+.meMsg .user {
+   display: none;
+}
+
+.adminMsg {
+   color: white;
+   border-radius: 10px;
+   padding: 10px;
+   margin: 0 auto;
+   width: fit-content;
+   background: grey;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+.adminMsg span::after {
+   content: ":";
+   margin-left: 2px;
+   margin-right: 5px;
+}
+
+.adminMsg span,
+.adminMsg div {
+   padding: 0;
+   width: fit-content;
+   font-size: 14px;
+   font-weight: 400;
+   white-space: pre-wrap;
+   color: #fff;
+}
+
+.adminMsg .time {
+   display: none;
+}
